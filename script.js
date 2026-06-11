@@ -1,4 +1,4 @@
-emailjs.init("SpLKfuA_nR1mfy8lUh");
+emailjs.init("SpLKfuA_nR1my8lUh");
 
 const contactForm = 
     document.getElementById("contactForm");
