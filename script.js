@@ -28,3 +28,4 @@ if (darkModeBtn) {
         document.body.classList.toggle("dark-mode");
     });
 }
+console.log(darkModeBtn);
