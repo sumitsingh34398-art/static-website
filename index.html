@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cloud Computing Project Portfolio</title>
+<title>Cloud Computing Mini Project</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:Segoe UI,sans-serif;
 }
 
 body{
-background:#f4f7fb;
+background:#f4f7fc;
 color:#333;
 }
 
 header{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600');
 background-size:cover;
 background-position:center;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -32,7 +32,7 @@ color:white;
 }
 
 .hero h1{
-font-size:55px;
+font-size:60px;
 margin-bottom:15px;
 }
 
@@ -54,9 +54,9 @@ section{
 padding:70px 10%;
 }
 
-.section-title{
+.title{
 text-align:center;
-font-size:35px;
+font-size:36px;
 margin-bottom:40px;
 color:#1565c0;
 }
@@ -65,8 +65,8 @@ color:#1565c0;
 background:white;
 padding:25px;
 border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:25px;
 }
 
 .grid{
@@ -75,45 +75,36 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.feature{
+.box{
 background:white;
 padding:25px;
-text-align:center;
 border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 transition:.3s;
 }
 
-.feature:hover{
+.box:hover{
 transform:translateY(-8px);
 }
 
-.feature h3{
-color:#1976d2;
+.box h3{
+color:#1565c0;
 margin-bottom:10px;
 }
 
 .tech{
 display:flex;
 flex-wrap:wrap;
-gap:15px;
 justify-content:center;
+gap:15px;
 }
 
 .tech span{
-background:#1976d2;
+background:#1565c0;
 color:white;
 padding:10px 20px;
-border-radius:25px;
-}
-
-.timeline{
-border-left:4px solid #1976d2;
-padding-left:25px;
-}
-
-.timeline div{
-margin-bottom:25px;
+border-radius:20px;
 }
 
 footer{
@@ -121,73 +112,74 @@ background:#0d47a1;
 color:white;
 text-align:center;
 padding:25px;
+margin-top:40px;
+}
+
+img{
+max-width:100%;
+border-radius:15px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
 <div class="hero">
+<div>
 <h1>Cloud Computing Mini Project</h1>
-<p>Professional Static Website Hosting Using GitHub Pages</p>
-<a href="#about" class="btn">Explore Project</a>
+<p>Static Website Hosting Using GitHub Pages</p>
+<a href="#about" class="btn">View Project</a>
+</div>
 </div>
 </header>
 
 <section id="about">
-<h2 class="section-title">Project Overview</h2>
+<h2 class="title">Project Overview</h2>
 
 <div class="card">
 <p>
-This project demonstrates cloud-based static website hosting using GitHub Pages.
-The website is deployed online and can be accessed globally through the internet.
-It shows how cloud services provide scalable and cost-effective hosting solutions.
+This project demonstrates cloud-based website hosting using GitHub Pages.
+The website is deployed on a cloud platform and can be accessed globally
+through a public URL.
+</p>
+</div>
+
+<img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200">
+</section>
+
+<section>
+<h2 class="title">Student Information</h2>
+
+<div class="card">
+<h3>Name : Sumit Singh</h3>
+<br>
+<h3>Branch : Computer Engineering</h3>
+<br>
+<h3>Subject : Cloud Computing</h3>
+<br>
+<h3>Project : Static Website Hosting</h3>
+</div>
+</section>
+
+<section>
+<h2 class="title">Project Architecture</h2>
+
+<div class="card">
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="200">
+</center>
+
+<br>
+
+<p style="text-align:center;">
+User → Internet → GitHub Repository → GitHub Pages → Live Website
 </p>
 </div>
 </section>
 
 <section>
-<h2 class="section-title">Student Information</h2>
-
-<div class="card">
-<h3>Name: Sumit Singh</h3>
-<p>Branch: Computer Engineering</p>
-<p>Course: Cloud Computing</p>
-<p>Project Type: Static Website Hosting</p>
-</div>
-</section>
-
-<section>
-<h2 class="section-title">Project Features</h2>
-
-<div class="grid">
-
-<div class="feature">
-<h3>Cloud Hosting</h3>
-<p>Hosted using GitHub Pages cloud platform.</p>
-</div>
-
-<div class="feature">
-<h3>Responsive Design</h3>
-<p>Works smoothly on mobile and desktop.</p>
-</div>
-
-<div class="feature">
-<h3>Free Deployment</h3>
-<p>No hosting charges required.</p>
-</div>
-
-<div class="feature">
-<h3>Global Access</h3>
-<p>Accessible from anywhere in the world.</p>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2 class="section-title">Technologies Used</h2>
+<h2 class="title">Technologies Used</h2>
 
 <div class="tech">
 <span>HTML5</span>
@@ -196,81 +188,74 @@ It shows how cloud services provide scalable and cost-effective hosting solution
 <span>GitHub Pages</span>
 <span>Cloud Computing</span>
 </div>
-
 </section>
 
 <section>
-<h2 class="section-title">Deployment Workflow</h2>
-
-<div class="card timeline">
-
-<div>
-<h3>Step 1</h3>
-<p>Create Website using HTML & CSS</p>
-</div>
-
-<div>
-<h3>Step 2</h3>
-<p>Upload Files to GitHub Repository</p>
-</div>
-
-<div>
-<h3>Step 3</h3>
-<p>Enable GitHub Pages</p>
-</div>
-
-<div>
-<h3>Step 4</h3>
-<p>Deploy Website on Cloud</p>
-</div>
-
-<div>
-<h3>Step 5</h3>
-<p>Access Website Through Public URL</p>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2 class="section-title">Project Benefits</h2>
+<h2 class="title">Project Features</h2>
 
 <div class="grid">
 
-<div class="feature">
-<h3>Low Cost</h3>
-<p>No infrastructure cost.</p>
+<div class="box">
+<h3>Cloud Hosting</h3>
+<p>Website hosted on cloud platform.</p>
 </div>
 
-<div class="feature">
-<h3>Secure</h3>
-<p>HTTPS enabled hosting.</p>
+<div class="box">
+<h3>Responsive Design</h3>
+<p>Works on Mobile and Desktop.</p>
 </div>
 
-<div class="feature">
-<h3>Easy Management</h3>
-<p>Simple update and deployment process.</p>
+<div class="box">
+<h3>Secure Access</h3>
+<p>HTTPS Enabled Website.</p>
+</div>
+
+<div class="box">
+<h3>Free Deployment</h3>
+<p>No Hosting Cost Required.</p>
 </div>
 
 </div>
-
 </section>
 
 <section>
-<h2 class="section-title">Conclusion</h2>
+<h2 class="title">Deployment Steps</h2>
+
+<div class="card">
+<ol>
+<li>Create HTML Website</li>
+<li>Create GitHub Repository</li>
+<li>Upload Project Files</li>
+<li>Enable GitHub Pages</li>
+<li>Deploy Website</li>
+<li>Access Public URL</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2 class="title">Live Project Result</h2>
 
 <div class="card">
 <p>
-This project successfully demonstrates static website hosting using cloud technology.
-GitHub Pages provides a reliable, secure and efficient platform for deploying websites
-without maintaining dedicated servers.
+The website is successfully deployed using GitHub Pages and can be accessed online through a public URL.
 </p>
 </div>
+</section>
 
+<section>
+<h2 class="title">Conclusion</h2>
+
+<div class="card">
+<p>
+This project successfully demonstrates Static Website Hosting using Cloud Computing technology.
+GitHub Pages provides a reliable, secure and cost-effective cloud hosting solution.
+</p>
+</div>
 </section>
 
 <footer>
-<h3>Cloud Computing Mini Project</h3>
+<h2>Cloud Computing Mini Project</h2>
 <p>Developed By Sumit Singh</p>
 </footer>
 
