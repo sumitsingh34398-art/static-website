@@ -3,47 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Static Website Hosting Project</title>
+<title>Cloud Computing Project Portfolio</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    background:#f4f6f9;
-    margin:0;
-    padding:0;
+background:#f4f7fb;
+color:#333;
 }
 
 header{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:30px;
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
 }
 
-.container{
-    width:80%;
-    margin:auto;
-    margin-top:20px;
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#2196f3;
+padding:12px 30px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+section{
+padding:70px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+color:#1565c0;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+margin-bottom:20px;
 }
 
-h2{
-    color:#0d6efd;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+transition:.3s;
+}
+
+.feature:hover{
+transform:translateY(-8px);
+}
+
+.feature h3{
+color:#1976d2;
+margin-bottom:10px;
+}
+
+.tech{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.tech span{
+background:#1976d2;
+color:white;
+padding:10px 20px;
+border-radius:25px;
+}
+
+.timeline{
+border-left:4px solid #1976d2;
+padding-left:25px;
+}
+
+.timeline div{
+margin-bottom:25px;
 }
 
 footer{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:25px;
 }
 </style>
 </head>
@@ -51,70 +128,150 @@ footer{
 <body>
 
 <header>
-    <h1>Static Website Hosting Project</h1>
-    <p>Cloud Computing Mini Project</p>
+<div class="hero">
+<h1>Cloud Computing Mini Project</h1>
+<p>Professional Static Website Hosting Using GitHub Pages</p>
+<a href="#about" class="btn">Explore Project</a>
+</div>
 </header>
 
-<div class="container">
+<section id="about">
+<h2 class="section-title">Project Overview</h2>
 
 <div class="card">
-    <h2>Student Information</h2>
-    <p><b>Name:</b> Sumit Singh</p>
-    <p><b>Branch:</b> Computer Engineering</p>
+<p>
+This project demonstrates cloud-based static website hosting using GitHub Pages.
+The website is deployed online and can be accessed globally through the internet.
+It shows how cloud services provide scalable and cost-effective hosting solutions.
+</p>
 </div>
+</section>
+
+<section>
+<h2 class="section-title">Student Information</h2>
 
 <div class="card">
-    <h2>Project Objective</h2>
-    <p>
-        The objective of this project is to host a static website on the cloud
-        using GitHub Pages and demonstrate cloud-based web hosting.
-    </p>
+<h3>Name: Sumit Singh</h3>
+<p>Branch: Computer Engineering</p>
+<p>Course: Cloud Computing</p>
+<p>Project Type: Static Website Hosting</p>
 </div>
+</section>
+
+<section>
+<h2 class="section-title">Project Features</h2>
+
+<div class="grid">
+
+<div class="feature">
+<h3>Cloud Hosting</h3>
+<p>Hosted using GitHub Pages cloud platform.</p>
+</div>
+
+<div class="feature">
+<h3>Responsive Design</h3>
+<p>Works smoothly on mobile and desktop.</p>
+</div>
+
+<div class="feature">
+<h3>Free Deployment</h3>
+<p>No hosting charges required.</p>
+</div>
+
+<div class="feature">
+<h3>Global Access</h3>
+<p>Accessible from anywhere in the world.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Technologies Used</h2>
+
+<div class="tech">
+<span>HTML5</span>
+<span>CSS3</span>
+<span>GitHub</span>
+<span>GitHub Pages</span>
+<span>Cloud Computing</span>
+</div>
+
+</section>
+
+<section>
+<h2 class="section-title">Deployment Workflow</h2>
+
+<div class="card timeline">
+
+<div>
+<h3>Step 1</h3>
+<p>Create Website using HTML & CSS</p>
+</div>
+
+<div>
+<h3>Step 2</h3>
+<p>Upload Files to GitHub Repository</p>
+</div>
+
+<div>
+<h3>Step 3</h3>
+<p>Enable GitHub Pages</p>
+</div>
+
+<div>
+<h3>Step 4</h3>
+<p>Deploy Website on Cloud</p>
+</div>
+
+<div>
+<h3>Step 5</h3>
+<p>Access Website Through Public URL</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Project Benefits</h2>
+
+<div class="grid">
+
+<div class="feature">
+<h3>Low Cost</h3>
+<p>No infrastructure cost.</p>
+</div>
+
+<div class="feature">
+<h3>Secure</h3>
+<p>HTTPS enabled hosting.</p>
+</div>
+
+<div class="feature">
+<h3>Easy Management</h3>
+<p>Simple update and deployment process.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+<h2 class="section-title">Conclusion</h2>
 
 <div class="card">
-    <h2>Technologies Used</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>GitHub</li>
-        <li>GitHub Pages</li>
-    </ul>
+<p>
+This project successfully demonstrates static website hosting using cloud technology.
+GitHub Pages provides a reliable, secure and efficient platform for deploying websites
+without maintaining dedicated servers.
+</p>
 </div>
 
-<div class="card">
-    <h2>Project Features</h2>
-    <ul>
-        <li>Free Website Hosting</li>
-        <li>Responsive Design</li>
-        <li>Public Access Through URL</li>
-        <li>Cloud Based Deployment</li>
-        <li>Easy Maintenance</li>
-    </ul>
-</div>
-
-<div class="card">
-    <h2>Advantages</h2>
-    <ul>
-        <li>No Hosting Cost</li>
-        <li>Fast Deployment</li>
-        <li>Reliable Platform</li>
-        <li>Accessible Anywhere</li>
-    </ul>
-</div>
-
-<div class="card">
-    <h2>Conclusion</h2>
-    <p>
-        This project successfully demonstrates Static Website Hosting using
-        GitHub Pages. The website is deployed on the cloud and can be accessed
-        globally through a public URL.
-    </p>
-</div>
-
-</div>
+</section>
 
 <footer>
-    © 2026 Static Website Hosting Project | Cloud Computing
+<h3>Cloud Computing Mini Project</h3>
+<p>Developed By Sumit Singh</p>
 </footer>
 
 </body>
