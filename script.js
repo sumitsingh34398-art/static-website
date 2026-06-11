@@ -21,16 +21,10 @@ contactForm.addEventListener("submit", function(e) {
         console.log(error);
     });
 });
-// Dark Mode Toggle
+const darkModeBtn = document.getElementById("themeBtn");
 
-const darkModeBtn = document.getElementById("themBtn");
-
-darkModeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        darkModeBtn.innerHTML = "☀ Light Mode";
-    } else {
-        darkModeBtn.innerHTML = "🌙 Dark Mode";
-    }
-});
+if (darkModeBtn) {
+    darkModeBtn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+    });
+}
