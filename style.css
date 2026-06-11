@@ -296,3 +296,21 @@ font-size:28px;
 }
 
 }
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode .container,
+.dark-mode .card,
+.dark-mode section {
+    background: #1e1e1e;
+    color: white;
+}
