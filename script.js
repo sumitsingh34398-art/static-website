@@ -23,7 +23,7 @@ contactForm.addEventListener("submit", function(e) {
 });
 // Dark Mode Toggle
 
-const darkModeBtn = document.getElementById("darkModeBtn");
+const darkModeBtn = document.getElementById("themBtn");
 
 darkModeBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
