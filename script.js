@@ -1,4 +1,3 @@
-alert("Script Loaded");
 emailjs.init("SpLKfuA_nR1mfy8lUh");
 
 const contactForm = 
