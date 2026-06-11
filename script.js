@@ -1,6 +1,7 @@
 emailjs.init("SpLKfuA_nR1mfy8lUh");
 
-const contactForm = document.getElementById("contactForm");
+const contactForm = 
+    document.getElementById("contactForm");
 
 contactForm.addEventListener("submit", function(e) {
     e.preventDefault();
