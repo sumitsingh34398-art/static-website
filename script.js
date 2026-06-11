@@ -8,7 +8,7 @@ contactForm.addEventListener("submit", function(e) {
 
     emailjs.sendForm(
         "service_7xf3h6a",
-        "template_xsqpw6o",
+        "template_kjieehh",
         this
     )
     .then(function() {
