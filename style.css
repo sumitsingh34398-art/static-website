@@ -339,14 +339,7 @@ progress{
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
-.hacker-photo{
-    width: 220px;
-    height: auto;
-    display: block;
-    margin: 20px auto 40px auto;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
+
 .hero-card{
     max-width: 600px;
     margin-top: 140px;
