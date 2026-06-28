@@ -352,3 +352,9 @@ progress{
 .dark-mode .hero-card{
     background: rgba(255,255,255,0.08);
 }
+section{
+   clear: both;
+   margin-top: 40px;
+   padding: 20px;
+   width: 100%;
+}
